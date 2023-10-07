@@ -53,6 +53,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.4, )"
+            },
+            "jQuery.UI.Combined": {
+              "target": "Package",
+              "version": "[1.13.2, )"
             }
           },
           "imports": [

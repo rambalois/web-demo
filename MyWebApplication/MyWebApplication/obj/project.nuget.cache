@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "J6uIAPy1aDYhfZ6nkx/jEHM+F03eL8DeVgdQEh+pA/hOlMxT71bCsbtXs83XkecbFk0H9xWnYziqzb+RW4bn8g==",
+  "dgSpecHash": "4kY1OGaESES2dgeAbIhGIJf7EGMrNiFUYjhMMMvFumy1lvbzvVHsphrrjdbGc7NDIT9CdkGtlFEGtAkeNXubfg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ramba\\source\\repos\\MyWebApplication\\MyWebApplication\\MyWebApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ramba\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ramba\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\ramba\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\ramba\\.nuget\\packages\\jquery\\2.0.0\\jquery.2.0.0.nupkg.sha512",
+    "C:\\Users\\ramba\\.nuget\\packages\\jquery.ui.combined\\1.13.2\\jquery.ui.combined.1.13.2.nupkg.sha512",
     "C:\\Users\\ramba\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\ramba\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ramba\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
@@ -72,5 +74,16 @@
     "C:\\Users\\ramba\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ramba\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "jQuery.UI.Combined 1.13.2 depends on jQuery (>= 1.13.1) but jQuery 1.13.1 was not found. An approximate best match of jQuery 2.0.0 was resolved.",
+      "libraryId": "jQuery",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

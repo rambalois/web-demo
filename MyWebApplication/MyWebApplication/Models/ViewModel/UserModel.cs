@@ -16,11 +16,10 @@ namespace MyWebApplication.Models.ViewModel
         [Display(Name = "Password")]
         public string Password { get; set; }
 
-        [Required(ErrorMessage = "*")]
         [DataType(DataType.Password)]
         [Display(Name = "Confirm Password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
-        public string ConfirmPassword { get; set; }
+        public string ConfirmPassword { get; set; } // Add this property for password confirmation
 
         [Required(ErrorMessage = "*")]
         [Display(Name = "First Name")]
@@ -35,5 +34,13 @@ namespace MyWebApplication.Models.ViewModel
         [Required(ErrorMessage = "*")]
         [Display(Name = "Created By")]
         public int CreatedBy { get; set; }
+
+        [Required(AllowEmptyStrings = true)]
+        public string AccountImage { get; set; }
+    }
+
+    public class UsersModel
+    {
+        public List<UserModel> Users { get; set; }
     }
 }
