@@ -1,4 +1,4 @@
-﻿@model MyWebApplication.Models.ViewModel.UsersModel
+@model MyWebApplication.Models.ViewModel.UsersModel
 @{
     ViewBag.Title = "Users";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -21,6 +21,12 @@
             @foreach (var i in Model.Users)
             {
                 <tr>
+                    <td>
+                        @if (!string.IsNullOrEmpty(i.AccountImage))
+                        {
+                            <img src="@i.AccountImage" alt="Account Image" width="25" height="25" />
+                        }
+                    </td>
                     <td>@Html.DisplayFor(m => i.LoginName)</td>
                     <td>@Html.DisplayFor(m => i.FirstName)</td>
                     <td>@Html.DisplayFor(m => i.LastName)</td>
